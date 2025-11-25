@@ -5,7 +5,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/Blue_Shining_Background-1582898513.jpg');
+    /*background-image: url('img/Blue_Shining_Background-1582898513.jpg');*/
+    background-color: #39849b; 
    /* background-color: #5da6d0; /* Rosa pastel */
     min-height: 700vh;
     background-attachment: fixed; /* Fijo para que no se mueva */
@@ -1831,4 +1832,5 @@ body {
         height: 60px;
         margin-bottom: 15px;
     }
+
 }
