@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Fiesta de cumpleaños - Assul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Portada con sobre -->
+    <div id="portada" class="portada">
+        <div class="sobre-container">
+            <div class="sobre-wrapper">
+                <img src="img/sobreAssul-cerrado.png" alt="Sobre victoriano cerrado" class="sobre sobre-cerrado">
+                <img src="img/sobreAssul-abierto.png" alt="Sobre victoriano abierto" class="sobre sobre-abierto">
+            </div>
+            <p class="instruccion">Haz clic en el sobre para <br>abrir la invitación</p>
+        </div>
+    </div>
+    <div class="contenedor-principal">
+        <!-- Imagen inicial (sin margen) -->
+        <section class="seccion-fullscreen">
+            <img src="img/portadaXVIIIA.png" alt="Fotografía principal XV Años" class="imagen-fullscreen">
+        </section>
+
+      
+        <!-- Sección de música -->
+<section class="seccion-musica fade-in">
+    <div class="contenedor-musica">
+        <!-- Imagen Dana centrada y reducida -->
+        <div class="adorno-superior">
+            <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+        </div>
+        <div class="contenedor-imagen-dana">
+            <img src="img/assul-text.png" alt="Dana" class="imagen-dana-musica" style="width: 250px;">
+        </div>
+        <p class="texto-regalos-destacado">Reproduce mi canción favorita</p>
+        <img src="img/audio1.png" alt="Reproductor musical" class="imagen-musica" id="imagenMusica">
+        <div class="adorno-inferior">
+            <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral" style="transform: rotate(180deg);" >
+        </div>
+        <audio id="audioPlayer" src="Oh Pretty Woman.mp3"></audio>
+    </div>
+   
+</section>
+
+                <!-- Sección de Texto Bíblico -->
+<section class="seccion-texto-biblico fade-in">
+    <div class="contenedor-texto-biblico">
+        <h3 class="titulo-seccion-estilizado" style="color: aquamarine;">Mi frase, Mi lema</h3>
+        
+        <div class="tarjeta-victoriana-texto-biblico">
+            <div class="adorno-superior">
+                <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+            </div>
+            
+            <div class="contenido-texto-biblico">
+                <img src="img/corazon-azul.png" alt="Icono biblia" class="icono-texto-biblico">
+                <div class="texto-biblico">
+                    <p class="texto-regalos-destacado">"solo con el corazón se puede ver bien, lo esencial es invisible a los ojos"</p>
+                    <p class="texto-galeria">Antoine de Saint-Exupéry</p>
+                </div>
+            </div>
+            
+            <div class="adorno-inferior">
+                <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral" style="transform: rotate(180deg);" >
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="seccion-agradecimiento fade-in">
+            <div class="contenedor-agradecimiento">
+                <h3 class="titulo-seccion-estilizado" style="color: aquamarine;">te invitamos</h3>
+                
+                <div class="tarjeta-victoriana-agradecimiento">
+                    <div class="adorno-superior">
+                        <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+                    </div>
+                    
+                        <div class="separador-decorativo"></div>
+                        <p class="texto-padres">Mi familia y yo, los esperamos el día</p>
+                        <div class="contenedor-imagen-fecha">
+                            <img src="img/fecha-assul.png" alt="fecha" class="fecha-agradecimiento">
+                        </div>
+                    
+                    <div class="adorno-inferior">
+                        <img src="img/linea-decorativa-up.png" alt="Adorno floral inferior" style="transform: rotate(180deg);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+     <!-- Sección del Contador de Tiempo -->
+<section class="contador-victoriano">
+    <h3 class="titulo-contador" style="color: aquamarine;">La cuenta regresiva ha comenzado</h3>
+    <div class="marco-contador">
+        <div class="contenido-contador">
+            <p class="subtitulo-contador">Faltan tan solo...</p>
+            
+            <div class="contador-elegante">
+                <div class="item-tiempo">
+                    <div class="numero" id="dias-elegante">00</div>
+                    <div class="etiqueta">Días</div>
+                </div>
+                <div class="separador">:</div>
+                <div class="item-tiempo">
+                    <div class="numero" id="horas-elegante">00</div>
+                    <div class="etiqueta">Horas</div>
+                </div>
+                <div class="separador">:</div>
+                <div class="item-tiempo">
+                    <div class="numero" id="minutos-elegante">00</div>
+                    <div class="etiqueta">Minutos</div>
+                </div>
+                <div class="separador">:</div>
+                <div class="item-tiempo">
+                    <div class="numero" id="segundos-elegante">00</div>
+                    <div class="etiqueta">Segundos</div>
+                </div>
+            </div>
+            
+            <p class="mensaje-contador">Para este día tan especial</p>
+        </div>
+    </div>
+</section>
+
+    <section class="seccion-ubicacion-estilizada fade-in">
+        <div class="contenedor-ubicacion-estilizado">
+            <h3 class="titulo-seccion-estilizado" style="color: aquamarine;">Recepción</h3>
+            
+            <div class="tarjeta-victoriana-ubicacion">
+                <div class="adorno-superior">
+                    <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+                </div>
+                
+                <div class="contenido-ubicacion">
+                    <!-- Recepción -->
+                    <div class="item-ubicacion">
+                        <img src="img/reception.png" alt="Recepción" class="icono-dorado">
+                        <div class="texto-ubicacion">
+                            <h4 class="texto-regalos-destacado">Recepción</h4>
+                            <p>21 de Diciembre de 2025</p>
+                            <p class="destacado">14:30 horas</p>
+                            <p>Quinta Yaret (casa familiar)</p>
+                            <p>colonia los manantiales, rumbo a palo gordo                             </p>
+                            <p>Tierra Colorada, Gro</p>
+                            <a href="https://maps.app.goo.gl/cMNy6Em5uxVX38zTA" target="_blank" class="boton-mapa-estilizado">
+                                <img src="img/maps.png" alt="Mapa" class="icono-mapa">
+                                Ver ubicación en mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="adorno-inferior">
+                    <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seccion-vestimenta fade-in">
+        <div class="contenedor-vestimenta">
+            <h3 class="titulo-seccion-estilizado"style="color: aquamarine;">Código de Vestimenta</h3>
+            
+            <div class="tarjeta-victoriana-vestimenta">
+                <div class="adorno-superior">
+                    <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+                </div>
+                
+                <div class="contenido-vestimenta">
+                    <p class="texto-confirmacion">Para este gran día, te agradecería usar un código de vestimenta formal en tonos beige y blanco <br><b>(estrictamente prohibido cualquier tonalidad de azul)</b></br>
+                    </p> 
+                    <div class="separador-decorativo"></div>
+                    <p class="texto-confirmacion">Evento tipo jardín 
+                    </p>
+                </div>
+                
+                <div class="adorno-inferior">
+                    <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-confirmacion fade-in">
+        <div class="contenedor-confirmacion">
+            <h3 class="titulo-seccion-estilizado"style="color: aquamarine;">Confirmación de Asistencia</h3>
+            
+            <div class="tarjeta-victoriana-confirmacion">
+                <div class="adorno-superior">
+                    <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+                </div>
+                
+                <div class="contenido-confirmacion">
+                    <p class="texto-confirmacion">Estaríamos sumamente felices y encantados de contar con tu presencia en este día tan especial para nosotros. Por favor confirma tu asistencia antes del <br><b>10 de Diciembre de 2025.</b></p>
+                    
+                    <div class="boton-whatsapp-container">
+                        <a href="https://wa.me/5217451204702?text=¡Sí!%20Voy%20a%20asistir%20a%20tu%20fiesta%20🥳" class="boton-whatsapp" target="_blank">
+                            <img src="img/whatsapplogo.png" alt="WhatsApp" class="icono-whatsapp">
+                            Confirmar Asistencia
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="adorno-inferior">
+                    <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="seccion-regalos fade-in">
+        <div class="contenedor-regalos">
+            <h3 class="titulo-seccion-estilizado" style="color: aquamarine;">Lluvia de Sobres</h3>
+            
+            <div class="tarjeta-victoriana-regalos">
+                <div class="adorno-superior">
+                    <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+                </div>
+                
+                <div class="contenido-regalos">
+                    <div class="sobre-regalo">
+                        <img src="img/sobre-azul.png" alt="Sobre de regalo" class="icono-sobre-regalo" style="width: 80px; height: auto;">
+                    </div>
+                    
+                    <p class="texto-regalos-destacado">
+                       Muchas gracias por permítirme escoger mi regalo
+                       en lluvia de sobres
+                    </p>
+                    
+                </div>
+                
+                <div class="nota-regalos">
+                    <p>Tu presencia es nuestro mejor regalo, pero si esta dentro de tus posibilidades y deseas hacerme un presente te dejamos esta opción: ¡Lluvia de sobres!</p>
+                </div>
+                
+                <div class="adorno-inferior">
+                    <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral">
+                </div>
+            </div>
+        </div>
+    </section>
+                            
+    <section class="seccion-galeria fade-in">
+                    <div class="contenedor-galeria">
+                        <h3 class="titulo-seccion-estilizado"style="color: aquamarine;">Galería de fotos</h3>
+                        
+                        <div class="tarjeta-victoriana-galeria">
+                            <div class="adorno-superior">
+                                <img src="img/linea-decorativa-up.png" alt="Adorno victoriano">
+                            </div>
+                            
+                            <div class="galeria-container">
+                                <p class="texto-galeria">Un vistazo a los momentos que han marcado este hermoso camino</p>
+                                
+                                <div class="grid-galeria">
+                                    <!-- Fila 1 -->
+                                    <div class="marco-foto">
+                                        <img src="img/A-img-1.jpg" alt="Foto 1" class="foto-galeria">
+                                    </div>
+                                    <div class="marco-foto">
+                                        <img src="img/A-img-2.jpg" alt="Foto 2" class="foto-galeria">
+                                    </div>
+                                    <div class="marco-foto">
+                                        <img src="img/A-img-3.jpg" alt="Foto 3" class="foto-galeria">
+                                    </div>
+                                    
+                                    <!-- Fila 2 -->
+                                    <div class="marco-foto">
+                                        <img src="img/PortadaAssul.jpg" alt="Foto 4" class="foto-galeria">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="adorno-inferior">
+                                <img src="img/linea-decorativa-up.png" alt="Línea decorativa floral">
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section>
+        <footer class="footer">
+            <p>© 2025 - Fiesta de cumpleaños NAVAX</p>
+        </footer>
+    </section>
+</div>
+        <!-- ... (resto de las secciones originales permanecen igual) ... -->
+
+       
+
+    <script src="script.js"></script>
+</body>
+</html>
